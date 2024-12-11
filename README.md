@@ -2,6 +2,26 @@
 ### How to **Deploy** an app using _python flask_ on _Ubuntu_ :
 
 1. Prepare Your App
+* Create Python file  
+ Example:  
+```python
+from flask import Flask
+# Create the Flask app
+app = Flask(__name__)
+# Define a simple route
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+# Run the app
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+# Create the Flask app
+app = Flask(__name__)
+# Define a simple route
+@app.route('/')
+def home():
+    return "Welcome to the Flask App!"
+```
 
 2. Choose a Hosting Platform (Example AWS)
 
